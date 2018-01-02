@@ -14,7 +14,7 @@ const styles = {
       render() {
           return (
               <nav className="navbar navbar-default navbar-fixed-top">
-                  <a className="test">Welcome to Clicky Game</a>
+                  <h1 className="test">Welcome to Clicky Game</h1>
                 </nav>
           );
         }

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Section from './components/Section';
 import cards from './cards.json';
+import HelloBootstrap from './components/HelloBootstrap';
 // import {Button, Icon} from 'react-materialize';
 
 // const App = () => (
