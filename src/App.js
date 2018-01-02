@@ -31,7 +31,13 @@ class App extends Component {
           />
           <div className="container">
             
-            </div>
+          </div>
+
+          <div>
+            <Section
+            name={"Instructions"}
+            />
+          </div>
       </div>
       );
     }

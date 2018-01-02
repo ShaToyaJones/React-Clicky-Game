@@ -5,7 +5,7 @@ import "../styles/Section.css";
 
 const styles = {
   sectionStyles: {
-    background: "black"
+    background: "gray"
   }
 };
 
@@ -13,8 +13,9 @@ const styles = {
 
 const Section = () => (
   <section style={styles.sectionStyles} className="section">
-    <h2>How good is your memory?!?!</h2>
-    
+    <h2>Instructions:</h2>
+    <h3>Click on a card.</h3>
+    <h3>Try not to choose the same card twice.</h3>
   </section>
 );
 
