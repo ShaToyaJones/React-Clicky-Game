@@ -30,7 +30,7 @@ class App extends Component {
           name={"Welcome to Clicky Game"}
           />
           <div className="container">
-            
+          
           </div>
 
           <div>

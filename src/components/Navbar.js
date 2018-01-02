@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import "../styles/Navbar.css";
 
 const styles = {
-    navbarStyle: {
-      background: "lightblue"
-    },
     anchorStyle: {
       float: "left"
     }
@@ -14,8 +11,8 @@ const styles = {
       render() {
           return (
               <nav className="navbar navbar-default navbar-fixed-top">
-                  <h1 className="test">Welcome to Clicky Game</h1>
-                </nav>
+              <h1 className="test">Welcome to Clicky Game</h1>
+              </nav>                            
           );
         }
     }
