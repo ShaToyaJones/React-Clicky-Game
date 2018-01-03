@@ -3,20 +3,12 @@ import "../styles/Header.css";
 
 // By importing the Header.css file, it is added to the DOM whenever this component loads
 
-const styles = {
-  headerStyle: {
-    background: "blue"
-  },
-  headingStyle: {
-    fontSize: 100
-  }
-};
-
 // We use JSX curly braces to evaluate the style object
 
-const Header = () => (
-  <header style={styles.headerStyle} className="header">
-    <h1 style={styles.headingStyle}>Welcome</h1>
+const Header = props => (
+  <header className="header">
+    <h1>Clicky Game</h1>
+    <h2>Click on an image to earn points, but don't click on anything more than once!</h2>
   </header>
 );
 

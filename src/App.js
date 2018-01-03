@@ -5,30 +5,27 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Section from './components/Section';
 import cards from './cards.json';
-import HelloBootstrap from './components/HelloBootstrap';
+import Footer from './components/Footer';
 // import {Button, Icon} from 'react-materialize';
-
-// const App = () => (
-//   <div>
-//   < Navbar />
-//     < cards />
-//       </div>
-// );
 
 class App extends Component {
   //setting the initial value of this.state.player and this.state.score
   state = {
     player: "",
     cards: [],
-    score: 0
+    score: 0,
+    topScore: 0
   };
 
   render() {
     return (
       <div>
         <Navbar
+        score={this.state.score}
+        topScore={this.state.topScore}
           name={"Welcome to Clicky Game"}
           />
+          <Header></Header>
           <div className="container">
           
           </div>
@@ -38,22 +35,10 @@ class App extends Component {
             name={"Instructions"}
             />
           </div>
+          <Footer></Footer>
       </div>
       );
     }
   }
 
 export default App;
-
-//< Navbar />
-//        < cards />
-//        </div>
-//      <div className="App">
-//        <header className="App-header">
-//          <img src={logo} className="App-logo" alt="logo" />
-//          <h1 className="App-title">Welcome to Clicky Game</h1>
-//        </header>
-//        <p className="App-intro">
-//          How good is your memory?!?! To get started, edit <code>src/App.js</code> and save to reload.
-//        </p>
-//        <div>
