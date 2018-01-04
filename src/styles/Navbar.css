@@ -1,11 +1,32 @@
-.navbar {
-  background: #6abff0;
-  height: 100px;
+.navbar li {
+  display: inline-block;
   text-align: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+  
 }
 
-.navbar h1 {
-  font-size: 1.5rem;
-  margin: 0px;
+li.header {
   line-height: 4;
+}
+
+/* li.score1 {
+  margin-left: 75%;
+}
+
+li.score2 {
+  margin-left: 82%;
+} */
+
+.navbar {
+  background: rgb(106, 173, 255);
+}
+
+li {
+  font-family: "sans-sefif";
+}
+
+ul {
+  height: 100px;
+  margin: 0;
 }

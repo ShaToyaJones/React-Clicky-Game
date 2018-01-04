@@ -5,12 +5,11 @@ import "../styles/Section.css";
 
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
-const Section = () => (
-  <section className="section">
-    <h2>Instructions:</h2>
-    <h3>Click on a card.</h3>
-    <h3>Try not to choose the same card twice.</h3>
-  </section>
+const Section = (props) => (
+  <img className="section"
+    src={props.image}
+    alt={props.name}
+  />
 );
 
 export default Section;

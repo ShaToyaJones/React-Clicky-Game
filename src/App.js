@@ -12,10 +12,11 @@ class App extends Component {
   //setting the initial value of this.state.player and this.state.score
   state = {
     player: "",
-    cards: [],
+    cards: cards,
     score: 0,
     topScore: 0
   };
+
 
   render() {
     return (
@@ -23,7 +24,7 @@ class App extends Component {
         <Navbar
         score={this.state.score}
         topScore={this.state.topScore}
-          name={"Welcome to Clicky Game"}
+          name={"Clicky Game"}
           />
           <Header></Header>
           <div className="container">
@@ -31,9 +32,15 @@ class App extends Component {
           </div>
 
           <div>
-            <Section
-            name={"Instructions"}
-            />
+           {
+             this.state.cards.map(card => (
+              <Section
+              key={card.id}
+              name={card.name}
+              image={card.image}             
+              />
+             ))
+           }
           </div>
           <Footer></Footer>
       </div>
@@ -42,3 +49,7 @@ class App extends Component {
   }
 
 export default App;
+
+//work on css and image
+//work on handling the click event
+//at least console log the click event

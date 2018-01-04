@@ -1,12 +1,15 @@
 .header {
-    background: #150ab1;
     height: 200px;
   }
   
   .header h1 {
     margin: 0;
-    padding-top: 75px;
+    padding-top: 0px;
     text-align: center;
-    color: white;
-    font-size: 3rem;
+    color: rgb(15, 18, 228);
+    font-size: 4rem;
+  }
+
+  h2 {
+    text-align: center;
   }

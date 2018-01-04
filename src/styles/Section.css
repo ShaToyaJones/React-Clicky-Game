@@ -1,8 +1,9 @@
 .section {
     margin: 0px;
     padding: 5px;
+    width: 200px;
 }
 
 h2, h3 {
-    color: white;
+    color: rgb(2, 6, 221);
 }

@@ -4,10 +4,12 @@ import "../styles/Navbar.css";
   class Navbar extends Component {
       render() {
           return (
-              <nav className="navbar navbar-default navbar-fixed-top">
-              <h1 className="test">{this.props.name}</h1>
-              <span>score:{this.props.score}</span>
-              <span>topScore:{this.props.topScore}</span>
+              <nav className="navbar">
+                <ul>
+                    <li className="header">{this.props.name}</li>
+                    <li className="score1">Score: {this.props.score}</li>
+                    <li className="score2"> | Top Score: {this.props.topScore}</li>
+                </ul>
               </nav>                            
           );
         }
