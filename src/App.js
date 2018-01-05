@@ -18,16 +18,8 @@ class App extends Component {
     topScore: 0
   };
 
-  // componentWillMount() {
-  //   res => this.setState({cards:res.data.results})
-  //   .catch(err => console.log(err));
-  // }
 
-  // handleClick() {
-
-  // }
-
-  //shuffle algorithm taken from Stack Overflow (https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array).
+//************************************************************************shuffle algorithm taken from Stack Overflow (https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array).*************************************************************************
   shuffle = (a) => {
     var j, x, i;
     for (i = a.length - 1; i > 0; i--) {
@@ -36,6 +28,19 @@ class App extends Component {
         a[i] = a[j];
         a[j] = x;
     }
+}
+
+// componentWillMount() {
+
+// }
+
+handleClick = (event) => {
+  const {id} = event.target;
+  console.log(id);
+
+  this.setState({
+    
+  })
 }
 
   render() {
@@ -50,7 +55,8 @@ class App extends Component {
           <div className="container">
           
           </div>
-
+          {/* <button onClick={this.handleClick}>
+          </button> */}
           <div>
            {
              this.state.cards.map(card => (
