@@ -30,13 +30,14 @@ class App extends Component {
     }
 }
 
-// componentWillMount() {
+//************************************************************************WORKING ON THIS FUNCTIONALITY/UNDERSTANDING WHAT TO DO!!! */
+componentWillMount() {
 
-// }
+}
 
 handleClick = (event) => {
-  const {id} = event.target;
-  console.log(id);
+  const {cardId} = event.target.attributes.getItem("data-id").value;
+  console.log(cardId);
 
   this.setState({
     
@@ -47,7 +48,9 @@ handleClick = (event) => {
 incrementScore = () => {
   this.setState({ score: this.state.score + 1 });
   if (this.state.score === 12) {
+    //Wondering if I can get a Modal here instead of an Alert?!?!?!?!?!
     alert("CONGRATULATIONS!!! You won!!!");
+    //This should reset the score to 0 and restart the game.
     this.setState({
       guesses: [],
       score: 0
@@ -82,7 +85,9 @@ incrementTopScore = () => {
               <Section
               key={card.id}
               name={card.name}
-              image={card.image}             
+              image={card.image}
+              click={card.click}
+              handleClick={this.handleClick}
               />
              ))
            }
