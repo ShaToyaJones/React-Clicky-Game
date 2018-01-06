@@ -43,6 +43,25 @@ handleClick = (event) => {
   })
 }
 
+//Increases score for game after handleClick.
+incrementScore = () => {
+  this.setState({ score: this.state.score + 1 });
+  if (this.state.score === 12) {
+    alert("CONGRATULATIONS!!! You won!!!");
+    this.setState({
+      guesses: [],
+      score: 0
+    });
+  }
+}
+
+//To handle increasing the topScore.
+incrementTopScore = () => {
+  if (this.state.Score === this.state.topScore && this.state.topScore !== 12) {
+    this.setState({ topScore: this.state.topScore + 1 });
+  }
+}
+
   render() {
     return (
       <div>

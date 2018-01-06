@@ -7,7 +7,7 @@ import "../styles/Navbar.css";
               <nav className="navbar">
                 <ul>
                     <li className="header">{this.props.name}</li>
-                    <li className="score1">Score: {this.props.score}</li>
+                    <li className="score1"> Score: {this.props.score}</li>
                     <li className="score2"> | Top Score: {this.props.topScore}</li>
                 </ul>
               </nav>                            
